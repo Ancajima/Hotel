@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Resolvemos tus dudas sobre reservas, cancelaciones, check-in y pagos en Mancora Stays.">
+    <meta name="author" content="Juaus - Mancora Stays">
+    <title>Preguntas Frecuentes | Mancora Stays</title>
+
+    <link rel="icon" type="image/png" href="../img/Logo - Negro/genfavicon-32.png">
+    <link rel="apple-touch-icon" href="../img/Logo - Negro/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/faq.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container-fluid d-flex justify-content-between align-items-center px-5 py-2">
+            <a class="d-flex align-items-center gap-2" href="../index.html">
+                <img src="../img/Logo - Blanco/genfavicon-64.png" alt="Logo de Mancora Stays">
+                <span>
+                    <h4>Mancora Stays</h4>
+                </span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="menu d-flex gap-4 justify-content-between" id="menu">
+                <ul class="menuContainer d-flex gap-4 mb-0">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="Hospedajes.html">Hospedajes</a></li>
+                    <li><a href="Experiencias.html">Experiencia</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+                <a class="login d-flex align-items-center gap-2" href="Login.html" id="login">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16" aria-hidden="true">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                    </svg>
+                    Iniciar Sesión
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="faq-main">
+        <div class="faq-layout">
+
+            <!-- Sidebar -->
+            <aside class="faq-sidebar">
+                <p class="faq-sidebar-label">Categorías</p>
+
+                <nav class="faq-categories" aria-label="Categorías de preguntas frecuentes">
+                    <button class="faq-cat-link active" data-target="cat-reservas" type="button">
+                        Reservas y pagos <span>(8)</span>
+                    </button>
+                    <button class="faq-cat-link" data-target="cat-estadia" type="button">
+                        Durante tu estadía <span>(6)</span>
+                    </button>
+                    <button class="faq-cat-link" data-target="cat-casas" type="button">
+                        Las casas <span>(5)</span>
+                    </button>
+                    <button class="faq-cat-link" data-target="cat-experiencias" type="button">
+                        Experiencias <span>(4)</span>
+                    </button>
+                    <button class="faq-cat-link" data-target="cat-llegar" type="button">
+                        Llegar a Máncora <span>(5)</span>
+                    </button>
+                    <button class="faq-cat-link" data-target="cat-politicas" type="button">
+                        Políticas y términos <span>(3)</span>
+                    </button>
+                </nav>
+
+                <div class="faq-help-card">
+                    <h3>¿No encontraste tu respuesta?</h3>
+                    <p>Estamos aquí para ayudarte.</p>
+                    <a class="faq-help-btn" href="https://wa.me/51999999999" target="_blank" rel="noopener">
+                        Escríbenos por WhatsApp
+                    </a>
+                    <a class="faq-help-btn" href="mailto:hola@mancorastays.com">
+                        Envíanos un email
+                    </a>
+                </div>
+            </aside>
+
+            <!-- Contenido -->
+            <div class="faq-content">
+                <h1>Preguntas frecuentes</h1>
+                <p class="faq-subtitle">Encuentra respuestas rápidas a las dudas más comunes sobre tu estadía en Máncora.</p>
+
+                <div class="faq-search">
+                    <i class="bi bi-search" aria-hidden="true"></i>
+                    <input type="search" id="faq-search-input" placeholder="Buscar preguntas..."
+                        aria-label="Buscar preguntas frecuentes">
+                </div>
+
+                <p class="faq-no-results" id="faq-no-results">
+                    No encontramos preguntas que coincidan con tu búsqueda.
+                </p>
+
+                <!-- Reservas y pagos -->
+                <section class="faq-category-section" id="cat-reservas">
+                    <h2>Reservas y pagos</h2>
+                    <div class="faq-accordion">
+
+                        <div class="faq-row open">
+                            <button class="faq-row-question" aria-expanded="true">
+                                <span>¿Cómo reservo una casa?</span>
+                                <i class="bi bi-dash faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Eliges fechas y huéspedes en la página de la casa, completas tus datos, y pagas el 50% al confirmar.</p>
+                                <p>El otro 50% se cobra automáticamente 7 días antes del check-in.</p>
+                                <p>Recibes voucher inmediato por email y WhatsApp.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Puedo cancelar mi reserva?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Sí. Puedes cancelar sin costo hasta 7 días antes de tu llegada y recibir el reembolso completo del adelanto. Dentro de los 7 días previos aplica una penalidad del 50%.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Qué métodos de pago aceptan?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Aceptamos tarjetas de crédito y débito (Visa, Mastercard), transferencia bancaria y Yape/Plin para el adelanto de tu reserva.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Puedo cambiar mis fechas después de reservar?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Sí, puedes reprogramar una vez sin costo, sujeto a disponibilidad de la casa, avisando con al menos 5 días de anticipación por WhatsApp.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Hacen factura?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Sí, emitimos factura electrónica o boleta a nombre de la persona o empresa que reserva. Solo indícanos el RUC o DNI al confirmar tu reserva.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Necesito pagar el 100% para asegurar mi reserva?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>No. Con el 50% de adelanto tu reserva queda confirmada y bloqueada en el calendario. El saldo se cobra automáticamente 7 días antes del check-in.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Qué pasa si no llego a pagar el saldo a tiempo?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Te avisamos por email y WhatsApp antes de la fecha límite. Si el saldo no se paga dentro de las 48 horas siguientes, la reserva puede liberarse sin reembolso del adelanto.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Puedo reservar para grupos grandes o eventos?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Sí, algunas casas admiten hasta 12 huéspedes. Para eventos como cumpleaños o despedidas de soltero, escríbenos antes de reservar para confirmar condiciones.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Durante tu estadía -->
+                <section class="faq-category-section" id="cat-estadia">
+                    <h2>Durante tu estadía</h2>
+                    <div class="faq-accordion">
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿A qué hora es el check-in y check-out?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>El check-in es a partir de las 3:00 p.m. y el check-out hasta las 11:00 a.m. Horarios flexibles se coordinan por WhatsApp según disponibilidad.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Aceptan mascotas?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Depende de la casa. Revisa el detalle "Pet friendly" en la ficha de cada propiedad antes de reservar.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Hay servicio de limpieza durante la estadía?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Sí. Todas las casas incluyen limpieza previa a tu llegada. En estadías de más de 5 noches, agregamos una limpieza intermedia sin costo adicional.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Hay cocinero / chef disponible?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Podemos coordinar un chef privado para una o varias noches con costo adicional. Consulta disponibilidad y menú al reservar.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Qué pasa si tengo un problema durante mi estadía?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Cada huésped recibe un número de WhatsApp de soporte directo, disponible de 8:00 a.m. a 10:00 p.m., para resolver cualquier inconveniente al instante.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Las casas tienen WiFi y aire acondicionado?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Sí, todas nuestras casas cuentan con WiFi y aire acondicionado en las habitaciones principales, indicado en la ficha de cada propiedad.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Las casas -->
+                <section class="faq-category-section" id="cat-casas">
+                    <h2>Las casas</h2>
+                    <div class="faq-accordion">
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Las casas son frente al mar?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Sí, todas nuestras casas están ubicadas frente al mar o a pocos metros de la playa, en Las Pocitas, Vichayito o Punta Sal.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Cuántas personas caben en cada casa?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Varía entre 4 y 12 huéspedes según la casa. La capacidad exacta, número de habitaciones y baños está detallada en cada ficha.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Las casas incluyen piscina privada?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>La mayoría sí cuenta con piscina privada. Puedes filtrar por esta característica en la sección de Hospedajes.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Qué necesito llevar / qué ya está incluido?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Las casas incluyen sábanas frescas, toallas y una despensa básica de bienvenida. Solo trae tus artículos personales y lo necesario para la playa.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Puedo ver fotos y videos reales antes de reservar?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Sí, cada casa cuenta con galería de fotos reales en su ficha. Si necesitas un video adicional, lo enviamos por WhatsApp antes de tu reserva.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Experiencias -->
+                <section class="faq-category-section" id="cat-experiencias">
+                    <h2>Experiencias</h2>
+                    <div class="faq-accordion">
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Organizan actividades como surf o paseos en bote?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Sí, coordinamos clases de surf, nado con tortugas y paseos costeros con guías locales de confianza.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Las experiencias tienen costo adicional?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Sí, cada experiencia se cotiza aparte del alquiler de la casa. Te compartimos precios y horarios disponibles al momento de coordinarla.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Puedo reservar experiencias sin hospedarme con ustedes?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Por ahora las experiencias están disponibles solo para huéspedes que reservan una casa con Mancora Stays.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Con cuánta anticipación debo reservar una experiencia?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Recomendamos coordinarlo con al menos 48 horas de anticipación para asegurar cupo, sobre todo en temporada alta.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Llegar a Máncora -->
+                <section class="faq-category-section" id="cat-llegar">
+                    <h2>Llegar a Máncora</h2>
+                    <div class="faq-accordion">
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Cómo llego desde Lima a Máncora?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Lo más rápido es volar de Lima a Piura o Talara (1h 20min aprox.) y luego tomar un auto privado o bus hasta Máncora (1h a 1h 30min).</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Ofrecen traslado desde el aeropuerto de Piura o Talara?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Sí, coordinamos traslados privados desde ambos aeropuertos con costo adicional. Solicítalo al confirmar tu reserva.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Está lejos la casa del centro de Máncora?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Nuestras casas están entre 5 y 15 minutos en auto del centro de Máncora, dependiendo de si están en Las Pocitas, Vichayito o Punta Sal.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Hay estacionamiento disponible en la casa?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Sí, todas las casas cuentan con cochera privada o espacio de estacionamiento dentro del terreno.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Qué recomiendan para movilizarse dentro de Máncora?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Los mototaxis son la forma más común y económica de moverte dentro de la zona. También puedes alquilar un auto o bicicleta por el día.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Políticas y términos -->
+                <section class="faq-category-section" id="cat-politicas">
+                    <h2>Políticas y términos</h2>
+                    <div class="faq-accordion">
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Cuál es la política de cancelación completa?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Cancelación gratuita hasta 7 días antes del check-in. Dentro de los 7 días previos se retiene el 50% del adelanto como penalidad.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Qué pasa si causo daños en la casa?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>Se solicita un depósito de garantía reembolsable, que se devuelve completo si la casa se entrega en las mismas condiciones en que se recibió.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-row">
+                            <button class="faq-row-question" aria-expanded="false">
+                                <span>¿Puedo hacer fiestas o eventos en la casa?</span>
+                                <i class="bi bi-plus faq-row-icon" aria-hidden="true"></i>
+                            </button>
+                            <div class="faq-row-answer">
+                                <p>No se permiten fiestas con público externo por respeto a los vecinos. Reuniones tranquilas entre los huéspedes registrados sí están permitidas.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-5">
+        <div
+            class="container-fluid d-flex flex-column flex-lg-row justify-content-between align-items-start px-4 px-lg-5 py-5 gap-4 gap-lg-3">
+            <div>
+                <div class="d-flex align-items-center gap-2">
+                    <img src="../../img/Logo - Blanco/genfavicon-64.png" alt="Logo_MancoraStays">
+                    <h4>Mancora Stays</h4>
+                </div>
+                <p>Casas de playa boutique, frente al mar, con servicio garantizado de inicio a fin.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-5">
+                <div class="d-flex flex-column gap-2">
+                    <h4>Explorar</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-house-door me-2"></i><a href="index.html">Home</a></li>
+                        <li><i class="bi bi-door-open me-2"></i><a href="pag/Hospedajes.html">Hospedajes</a></li>
+                        <li><i class="bi bi-binoculars me-2"></i><a href="pag/Experiencia.html">Experiencia</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Soporte</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-telephone me-2"></i><a href="pag/Contacto.html">Contacto</a></li>
+                        <li><i class="bi bi-question-circle me-2"></i><a href="pag/Faq.html">FAQ</a></li>
+                        <li><i class="bi bi-whatsapp me-2"></i><a href="https://wa.link/s6ilkf">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Síguenos</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-instagram me-2"></i><a href="#">Instagram</a></li>
+                        <li><i class="bi bi-facebook me-2"></i><a href="#">Facebook</a></li>
+                        <li><i class="bi bi-tiktok me-2"></i><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/faq.js"></script>
+</body>
+
+</html>

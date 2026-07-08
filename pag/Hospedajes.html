@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Encuentra tu casa frente al mar en Mancora: Las Pocitas, Vichayito y Punta Sal.">
+    <meta name="author" content="Juaus - Mancora Stays">
+    <title>Hospedajes | Mancora Stays</title>
+
+    <link rel="icon" type="image/png" href="../img/Logo - Negro/genfavicon-32.png">
+    <link rel="apple-touch-icon" href="../img/Logo - Negro/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@500;700;900&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hospesaje.css">
+</head>
+
+<body>
+     <header>
+        <nav class="container-fluid d-flex justify-content-between align-items-center px-5 py-2">
+            <a class="d-flex align-items-center gap-2" href="#">
+                <img src="../img/Logo - Blanco/genfavicon-64.png" alt="Logo_MancoraStays">
+                <span>
+                    <h4>Mancora Stays</h4>
+                </span>
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="menu d-flex gap-4 justify-content-between" id="menu">
+                <ul class="menuContainer d-flex gap-4 mb-0">
+                    <li><a class="a_active" href="../index.html">Home</a></li>
+                    <li><a href="Hospedajes.html">Hospedajes</a></li>
+                    <li><a href="Experiencia.html">Experiencia</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+                <a class="login d-flex align-items-center gap-2" href="../pag/Login.html" id="login" text-align="center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                    </svg>
+                    Iniciar Sesión
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- HEADER DEL CATALOGO -->
+        <section class="container catalog-header">
+            <p>14 casas · Máncora · Las Pocitas · Vichayito · Punta Sal</p>
+            <h1>Encuentra tu casa frente al mar</h1>
+
+            <form class="catalog-search">
+                <div class="catalog-search-field catalog-search-field--wide">
+                    <label for="cs-destino" class="text-body-small">Destino</label>
+                    <input type="text" id="cs-destino" class="form-control" placeholder="Máncora - Las Pocitas">
+                </div>
+                <div class="catalog-search-field">
+                    <label for="cs-llegada" class="text-body-small">Llegada</label>
+                    <input type="text" id="cs-llegada" class="form-control" placeholder="24 Enero">
+                </div>
+                <div class="catalog-search-field">
+                    <label for="cs-salida" class="text-body-small">Salida</label>
+                    <input type="text" id="cs-salida" class="form-control" placeholder="31 Enero">
+                </div>
+                <div class="catalog-search-field">
+                    <label for="cs-huespedes" class="text-body-small">Huéspedes</label>
+                    <select id="cs-huespedes" class="form-select">
+                        <option selected>2 personas</option>
+                        <option>3 personas</option>
+                        <option>4+ personas</option>
+                    </select>
+                </div>
+                <div class="catalog-search-field catalog-search-field--button">
+                    <button type="submit" class="btn-primary w-100">
+                        <i class="bi bi-search"></i> Buscar
+                    </button>
+                </div>
+            </form>
+        </section>
+
+        <!-- CUERPO: FILTROS + GRID -->
+        <section class="container catalog-body">
+            <div class="row g-4">
+
+                <!-- SIDEBAR DE FILTROS -->
+                <aside class="col-lg-3">
+                    <div class="filters-sidebar">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <h4 class="mb-0">Zona</h4>
+                            <button type="button" id="limpiarFiltros" class="link-more text-body-small">Limpiar
+                                filtros</button>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filtro-zona-check" type="checkbox" value="pocitas"
+                                id="zonaPocitas" checked>
+                            <label class="form-check-label" for="zonaPocitas">Las Pocitas</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filtro-zona-check" type="checkbox" value="vichayito"
+                                id="zonaVichayito" checked>
+                            <label class="form-check-label" for="zonaVichayito">Vichayito</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input filtro-zona-check" type="checkbox" value="puntasal"
+                                id="zonaPuntaSal" checked>
+                            <label class="form-check-label" for="zonaPuntaSal">Punta Sal</label>
+                        </div>
+
+                        <hr>
+
+                        <h4>Capacidad</h4>
+                        <div class="capacity-pills" data-pill-group="capacidad">
+                            <button type="button" class="pill" data-value="2-4">2-4</button>
+                            <button type="button" class="pill" data-value="5-8">5-8</button>
+                            <button type="button" class="pill" data-value="9-12">9-12</button>
+                        </div>
+
+                        <hr>
+
+                        <h4>Precio / noche</h4>
+                        <p class="price-range-value" id="priceRangeValue">Hasta S/ 800 / noche</p>
+                        <input type="range" class="form-range" id="priceRange" min="200" max="800" step="50"
+                            value="800">
+                    </div>
+                </aside>
+
+                <!-- GRID DE CASAS -->
+                <div class="col-lg-9">
+                    <div class="d-flex justify-content-between align-items-center mb-3 flex-wrap gap-2">
+                        <p class="results-count mb-0">20 casas encontradas</p>
+                        <select class="sort-select" aria-label="Ordenar por">
+                            <option>Recomendados</option>
+                            <option>Menor precio</option>
+                            <option>Mayor precio</option>
+                            <option>Mejor calificados</option>
+                        </select>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-md-6 col-xl-4 col-house">
+                            <a href="DetalleHospedaje.html" class="house-card" data-zona="puntasal">
+                                <div class="house-card-img">
+                                    <img src="../img/casas/casa-coral.jpg.jpg" alt="Casa Sol y Mar">
+                                    <span class="house-card-badge">Punta Sal</span>
+                                </div>
+                                <div class="house-card-body">
+                                    <h3>Casa Sol y Mar</h3>
+                                    <p class="text-description text-body-small">12 huéspedes · 5 habit. · 6 baños</p>
+                                    <div class="house-card-price"><strong>S/ 800</strong> / noche</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-4 col-house">
+                            <a href="DetalleHospedaje.html" class="house-card" data-zona="pocitas">
+                                <div class="house-card-img">
+                                    <img src="../img/casas/villa-las-palmeras.jpg.jpg" alt="Casa Coral">
+                                    <span class="house-card-badge">Las Pocitas</span>
+                                </div>
+                                <div class="house-card-body">
+                                    <h3>Casa Coral</h3>
+                                    <p class="text-description text-body-small">10 huéspedes · 4 habit. · 5 baños</p>
+                                    <div class="house-card-price"><strong>S/ 650</strong> / noche</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-4 col-house">
+                            <a href="DetalleHospedaje.html" class="house-card" data-zona="pocitas">
+                                <div class="house-card-img">
+                                    <img src="../img/casas/villa-las-palmeras.jpg.jpg"
+                                        alt="Villa Las Palmeras">
+                                    <span class="house-card-badge">Las Pocitas</span>
+                                </div>
+                                <div class="house-card-body">
+                                    <h3>Villa Las Palmeras</h3>
+                                    <p class="text-description text-body-small">6 huéspedes · 3 habit. · 3 baños</p>
+                                    <div class="house-card-price"><strong>S/ 550</strong> / noche</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-4 col-house">
+                            <a href="DetalleHospedaje.html" class="house-card" data-zona="puntasal">
+                                <div class="house-card-img">
+                                    <img src="../img/casas/casa-nautilus.jp.jpg" alt="Casa Nautilus">
+                                    <span class="house-card-badge">Punta Sal</span>
+                                </div>
+                                <div class="house-card-body">
+                                    <h3>Casa Nautilus</h3>
+                                    <p class="text-description text-body-small">8 huéspedes · 4 habit. · 3 baños</p>
+                                    <div class="house-card-price"><strong>S/ 500</strong> / noche</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-4 col-house">
+                            <a href="DetalleHospedaje.html" class="house-card" data-zona="vichayito">
+                                <div class="house-card-img">
+                                    <img src="../img/casas/casa-mareazul.jpg.jpg" alt="Casa Mareazul">
+                                    <span class="house-card-badge">Vichayito</span>
+                                </div>
+                                <div class="house-card-body">
+                                    <h3>Casa Mareazul</h3>
+                                    <p class="text-description text-body-small">8 huéspedes · 4 habit. · 4 baños</p>
+                                    <div class="house-card-price"><strong>S/ 450</strong> / noche</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-4 col-house">
+                            <a href="DetalleHospedaje.html" class="house-card" data-zona="pocitas">
+                                <div class="house-card-img">
+                                    <img src="../img/casas/casa-atardecer.jpg.jpg" alt="Casa Atardecer">
+                                    <span class="house-card-badge">Las Pocitas</span>
+                                </div>
+                                <div class="house-card-body">
+                                    <h3>Casa Atardecer</h3>
+                                    <p class="text-description text-body-small">4 huéspedes · 2 habit. · 1 baño</p>
+                                    <div class="house-card-price"><strong>S/ 350</strong> / noche</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-4 col-house">
+                            <a href="DetalleHospedaje.html" class="house-card" data-zona="pocitas">
+                                <div class="house-card-img">
+                                    <img src="../img/casas/casa-sirena.jpg.jpg" alt="Casa Sirena">
+                                    <span class="house-card-badge">Las Pocitas</span>
+                                </div>
+                                <div class="house-card-body">
+                                    <h3>Casa Sirena</h3>
+                                    <p class="text-description text-body-small">12 huéspedes · 6 habit. · 6 baños</p>
+                                    <div class="house-card-price"><strong>S/ 300</strong> / noche</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-4 col-house">
+                            <a href="DetalleHospedaje.html" class="house-card" data-zona="vichayito">
+                                <div class="house-card-img">
+                                    <img src="../img/casas/brisa-marina.jpg.jpg" alt="Brisa Marina">
+                                    <span class="house-card-badge">Vichayito</span>
+                                </div>
+                                <div class="house-card-body">
+                                    <h3>Brisa Marina</h3>
+                                    <p class="text-description text-body-small">10 huéspedes · 4 habit. · 4 baños</p>
+                                    <div class="house-card-price"><strong>S/ 300</strong> / noche</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-4 col-house">
+                            <a href="DetalleHospedaje.html" class="house-card" data-zona="vichayito">
+                                <div class="house-card-img">
+                                    <img src="../img/casas/bungalow-arena-blanca.jpg.jpg" alt="Bungalow Arena Blanca">
+                                    <span class="house-card-badge">Vichayito</span>
+                                </div>
+                                <div class="house-card-body">
+                                    <h3>Bungalow Arena Blanca</h3>
+                                    <p class="text-description text-body-small">4 huéspedes · 2 habit. · 2 baños</p>
+                                    <div class="house-card-price"><strong>S/ 280</strong> / noche</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- PAGINACION -->
+                    <nav class="d-flex justify-content-center mt-5" aria-label="Paginacion de resultados">
+                        <ul class="pagination">
+                            <li class="page-item active"><span class="page-link">1</span></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="mt-5">
+        <div
+            class="container-fluid d-flex flex-column flex-lg-row justify-content-between align-items-start px-4 px-lg-5 py-5 gap-4 gap-lg-3">
+            <div>
+                <div class="d-flex align-items-center gap-2">
+                    <img src="../../img/Logo - Blanco/genfavicon-64.png" alt="Logo_MancoraStays">
+                    <h4>Mancora Stays</h4>
+                </div>
+                <p>Casas de playa boutique, frente al mar, con servicio garantizado de inicio a fin.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-5">
+                <div class="d-flex flex-column gap-2">
+                    <h4>Explorar</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-house-door me-2"></i><a href="index.html">Home</a></li>
+                        <li><i class="bi bi-door-open me-2"></i><a href="pag/Hospedajes.html">Hospedajes</a></li>
+                        <li><i class="bi bi-binoculars me-2"></i><a href="pag/Experiencia.html">Experiencia</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Soporte</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-telephone me-2"></i><a href="pag/Contacto.html">Contacto</a></li>
+                        <li><i class="bi bi-question-circle me-2"></i><a href="pag/Faq.html">FAQ</a></li>
+                        <li><i class="bi bi-whatsapp me-2"></i><a href="https://wa.link/s6ilkf">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Síguenos</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-instagram me-2"></i><a href="#">Instagram</a></li>
+                        <li><i class="bi bi-facebook me-2"></i><a href="#">Facebook</a></li>
+                        <li><i class="bi bi-tiktok me-2"></i><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/catalogo.js"></script>
+    <script src="../js/Hospedaje.js"></script>
+    
+</body>
+
+</html>

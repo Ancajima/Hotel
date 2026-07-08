@@ -1,0 +1,512 @@
+﻿<!doctype html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta
+      name="description"
+      content="Detalle de hospedaje en Máncora Stays. Reserva tu casa frente al mar."
+    />
+
+    <title>Detalle Hospedaje | Mancora Stays</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="../img/Logo - Negro/genfavicon-32.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      href="../img/Logo - Negro/apple-touch-icon.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@500;700;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+    />
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+
+    <link rel="stylesheet" href="../css/detalleHospedaje.css" />
+  </head>
+
+  <body>
+    <header>
+      <nav
+        class="container-fluid d-flex justify-content-between align-items-center px-5 py-2"
+      >
+        <a class="d-flex align-items-center gap-2" href="../index.html">
+          <img
+            src="../img/Logo - Blanco/genfavicon-64.png"
+            alt="Logo_MancoraStays"
+          />
+
+          <span>
+            <h4>Mancora Stays</h4>
+          </span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle">
+          <i class="bi bi-list"></i>
+        </button>
+
+        <div class="menu d-flex gap-4 justify-content-between" id="menu">
+          <ul class="menuContainer d-flex gap-4 mb-0">
+            <li><a href="../index.html">Home</a></li>
+
+            <li><a href="../pag/Hospedajes.html">Hospedajes</a></li>
+
+            <li><a href="../pag/Experiencia.html">Experiencia</a></li>
+
+            <li><a href="#">Nosotros</a></li>
+
+            <li><a href="#">Contacto</a></li>
+          </ul>
+
+          <a
+            class="login d-flex align-items-center gap-2"
+            href="../pag/Login.html"
+            id="login"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="16"
+              height="16"
+              fill="currentColor"
+              class="bi bi-person"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z"
+              />
+            </svg>
+
+            Iniciar Sesión
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="detail-hero">
+        <div class="container">
+          <p class="detail-meta" id="detail-meta">
+            <span id="detail-zone">Las Pocitas</span>, Máncora ·
+            <span id="detail-guests-count">12</span> huéspedes
+          </p>
+
+          <h1 id="detail-name">
+            <span id="detail-name-main">Casa</span>
+            <span id="detail-name-highlight" class="detail-name-highlight"
+              >Sirena</span
+            >
+          </h1>
+        </div>
+      </section>
+
+      <section class="detail-body container">
+        <!-- Gallery: large image left, two stacked thumbs right (a todo el ancho) -->
+
+        <div class="gallery-grid mb-4">
+          <div class="gallery-main">
+            <img
+              id="detail-img-main"
+              src="../img/detalle/casa-sirena.jpg.jpg"
+              alt="Foto principal"
+            />
+          </div>
+
+          <div class="gallery-thumbs">
+            <img
+              id="detail-thumb-top"
+              src="../img/detalle/casa-sirena-terraza.jpg.jpg"
+              alt="Miniatura superior"
+            />
+
+            <div class="thumb-bottom">
+              <img
+                id="detail-thumb-bottom"
+                src="../img/detalle/casa-sirena-jardin.jpg.jpg"
+                alt="Miniatura inferior"
+              />
+
+              <a href="#" class="gallery-overlay">Ver 5 fotos</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-4">
+          <div class="col-lg-8">
+            <article class="detail-content">
+              <div class="detail-section">
+                <h2>Sobre la casa</h2>
+
+                <p id="detail-description">
+                  Madera, brisa y mar desde el primer momento. La Sirena te
+                  cambia de rumbo a lo natural y al espacio que necesitas
+                  cuando viajas en grupo — sin sacrificar nada de lo que hace
+                  especial a Máncora.
+                </p>
+              </div>
+
+              <div class="detail-section">
+                <h3>Lo que incluye</h3>
+
+                <ul class="detail-list detail-list-cols">
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i> WiFi alta velocidad
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i> Acceso directo a la
+                    playa
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i> Aire acondicionado
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i> Estacionamiento
+                  </li>
+
+                  <li>
+                    <i class="bi bi-check-circle-fill"></i> Piscina Privada
+                  </li>
+                </ul>
+              </div>
+
+              <div class="detail-card detail-map-card">
+                <h3>Ubicación</h3>
+
+                <p>
+                  Av. El Malecón 142, zona norte de Máncora — a pasos de la
+                  orilla y a 10 minutos del centro.
+                </p>
+
+                <iframe
+                  class="map-image"
+                  src="https://www.google.com/maps?q=Las+Pocitas,+M%C3%A1ncora,+Piura,+Peru&output=embed"
+                  title="Mapa de ubicación"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+
+              <div class="detail-section">
+                <h3>Habitaciones</h3>
+
+                <div class="detail-rooms-row">
+                  <div class="room-card">
+                    <img
+                      src="../img/detalle/habitacion1.jpg.jpg"
+                      alt="Habitación 1"
+                    />
+
+                    <p>Habitación 1</p>
+                  </div>
+
+                  <div class="room-card">
+                    <img
+                      src="../img/detalle/habitacion2.jpg.jpg"
+                      alt="Habitación 2"
+                    />
+
+                    <p>Habitación 2</p>
+                  </div>
+
+                  <div class="room-card">
+                    <img
+                      src="../img/detalle/habitacion3.jpg.jpg"
+                      alt="Habitación 3"
+                    />
+
+                    <p>Habitación 3</p>
+                  </div>
+                </div>
+
+                <a href="#" class="see-all-link">Ver todas</a>
+              </div>
+
+              <div class="detail-section">
+                <div class="section-header-row">
+                  <h3>Reseñas</h3>
+
+                  <a href="#" class="see-all-link"
+                    >Ver todas <i class="bi bi-chevron-right"></i
+                  ></a>
+                </div>
+
+                <div class="detail-review-cards">
+                  <div class="review-card">
+                    <div class="review-card-head">
+                      <strong>Daniel R.</strong>
+
+                      <span class="review-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+
+                    <p>
+                      Llegamos como familia y nos fuimos como si hubiésemos
+                      vivido ahí toda la vida. La vista al mar desde la sala es
+                      simplemente imponente.
+                    </p>
+
+                    <small>Nov 2025</small>
+                  </div>
+
+                  <div class="review-card">
+                    <div class="review-card-head">
+                      <strong>Carlos M.</strong>
+
+                      <span class="review-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+
+                    <p>
+                      La casa es ideal para grupos grandes y tiene todo lo
+                      necesario. Volveremos en la próxima temporada.
+                    </p>
+
+                    <small>Mar 2025</small>
+                  </div>
+
+                  <div class="review-card">
+                    <div class="review-card-head">
+                      <strong>Rodrigo T.</strong>
+
+                      <span class="review-stars">
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                      </span>
+                    </div>
+
+                    <p>
+                      Nos sorprendió la tranquilidad del lugar. Lejos del
+                      ruido, pero cerca de todo. Perfecto.
+                    </p>
+
+                    <small>Ene 2026</small>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <aside class="col-lg-4">
+            <div class="detail-booking-card">
+              <div class="booking-header">
+                <div class="booking-price-summary">
+                  <strong id="booking-price-amount">S/ 300</strong>
+
+                  <span>/ noche</span>
+                </div>
+              </div>
+
+              <form class="booking-form" id="booking-form" novalidate>
+                <div class="booking-fields-row">
+                  <div class="booking-field">
+                    <label for="checkin">Llegada</label>
+
+                    <input
+                      type="date"
+                      id="checkin"
+                      name="checkin"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+
+                  <div class="booking-field">
+                    <label for="checkout">Salida</label>
+
+                    <input
+                      type="date"
+                      id="checkout"
+                      name="checkout"
+                      class="form-control"
+                      required
+                    />
+                  </div>
+                </div>
+
+                <div class="booking-field">
+                  <label for="guests">Huéspedes</label>
+
+                  <select id="guests" name="guests" class="form-select">
+                    <option value="2" selected>2 personas</option>
+
+                    <option value="3">3 personas</option>
+
+                    <option value="4">4 personas</option>
+
+                    <option value="5">5+ personas</option>
+                  </select>
+                </div>
+
+                <p class="booking-error" id="booking-error" role="alert"></p>
+
+                <button type="submit" class="btn-primary w-100">
+                  Reservar
+                </button>
+
+                <p class="booking-note">No se cobra hasta confirmar</p>
+
+                <div
+                  class="booking-summary"
+                  data-cleaning-fee="100"
+                  data-service-fee="50"
+                >
+                  <div class="booking-summary-item">
+                    <span id="summary-rate-label">S/ 300 x 1 noche</span
+                    ><strong id="summary-rate-total">S/ 300</strong>
+                  </div>
+
+                  <div class="booking-summary-item">
+                    <span>Limpieza</span
+                    ><strong id="summary-cleaning">S/ 100</strong>
+                  </div>
+
+                  <div class="booking-summary-item">
+                    <span>Servicio</span
+                    ><strong id="summary-service">S/ 50</strong>
+                  </div>
+
+                  <div class="booking-summary-total">
+                    <span>Total</span
+                    ><strong id="summary-total">S/ 450</strong>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="detail-contact-card">
+              <div class="contact-avatar">
+                <i class="bi bi-person-fill"></i>
+              </div>
+
+              <div class="contact-info">
+                <strong>¿Dudas? Habla con María</strong>
+
+                <span class="contact-status">Disponible · responde en 2 min</span>
+              </div>
+
+              <a href="#" class="btn-whatsapp">
+                <i class="bi bi-whatsapp"></i> WhatsApp
+              </a>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-5">
+        <div
+            class="container-fluid d-flex flex-column flex-lg-row justify-content-between align-items-start px-4 px-lg-5 py-5 gap-4 gap-lg-3">
+            <div>
+                <div class="d-flex align-items-center gap-2">
+                    <img src="../../img/Logo - Blanco/genfavicon-64.png" alt="Logo_MancoraStays">
+                    <h4>Mancora Stays</h4>
+                </div>
+                <p>Casas de playa boutique, frente al mar, con servicio garantizado de inicio a fin.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-5">
+                <div class="d-flex flex-column gap-2">
+                    <h4>Explorar</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-house-door me-2"></i><a href="index.html">Home</a></li>
+                        <li><i class="bi bi-door-open me-2"></i><a href="pag/Hospedajes.html">Hospedajes</a></li>
+                        <li><i class="bi bi-binoculars me-2"></i><a href="pag/Experiencia.html">Experiencia</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Soporte</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-telephone me-2"></i><a href="pag/Contacto.html">Contacto</a></li>
+                        <li><i class="bi bi-question-circle me-2"></i><a href="pag/Faq.html">FAQ</a></li>
+                        <li><i class="bi bi-whatsapp me-2"></i><a href="https://wa.link/s6ilkf">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Síguenos</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-instagram me-2"></i><a href="#">Instagram</a></li>
+                        <li><i class="bi bi-facebook me-2"></i><a href="#">Facebook</a></li>
+                        <li><i class="bi bi-tiktok me-2"></i><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="galleryModal"
+      tabindex="-1"
+      aria-labelledby="galleryModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="galleryModalLabel">
+              Fotos del hospedaje
+            </h5>
+
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Cerrar"
+            ></button>
+          </div>
+
+          <div class="modal-body">
+            <div class="row g-3" id="galleryModalBody"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="../js/menu.js"></script>
+
+    <script src="../js/detalleHospedaje.js"></script>
+  </body>
+</html>

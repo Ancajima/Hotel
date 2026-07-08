@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proceso de Reserva</title>
+    <link rel="icon" type="image/png" href="../img/Logo - Negro/genfavicon-32.png">
+    <link rel="apple-touch-icon" href="../img/Logo - Negro/apple-touch-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/calendar.css">
+    <link rel="stylesheet" href="../../css/reserva.css">
+    <link rel="stylesheet" href="../../css/datos.css">
+</head>
+
+<body>
+    <header class="mb-5">
+        <nav class="container-fluid d-flex justify-content-between align-items-center px-5 py-2">
+            <a class="d-flex align-items-center gap-2" href="#">
+                <img src="../../img/Logo - Blanco/genfavicon-64.png" alt="Logo_MancoraStays">
+                <span>
+                    <h4>Mancora Stays</h4>
+                </span>
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="menu d-flex gap-4 justify-content-between" id="menu">
+                <ul class="menuContainer d-flex gap-4 mb-0">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../hospedajes.html">Hospedajes</a></li>
+                    <li><a href="../experiencia.html">Experiencia</a></li>
+                    <li><a href="../nosotros.html">Nosotros</a></li>
+                    <li><a href="../contacto.html">Contacto</a></li>
+                </ul>
+                <a class="login d-flex align-items-center gap-2" href="#" id="login" text-align="center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                    </svg>
+                    Iniciar Sesión
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="d-flex flex-row gap-3">
+            <a href="#" class="back-link">
+                <i class="bi bi-arrow-left"></i>
+                Volver a Casa Sirena
+            </a>
+        </div>
+        <div class="d-flex flex-column align-items-center gap-3">
+            <h3 style="font-weight: var(--font-bold); color: var(--color-primary-500);">Reservar</h3>
+            <div class="progress_reserva d-flex flex-wrap justify-content-center gap-3">
+                <p class="a_reserva a_reserva_completed">1. Fecha</p>
+                <p class="a_reserva a_reserva_completed">2. Huespedes</p>
+                <p class="a_reserva a_reserva_active">3. Datos</p>
+                <p class="a_reserva">4. Pago</p>
+                <p class="a_reserva">5. Confirmación</p>
+            </div>
+        </div>
+        <div class="my-5">
+            <p class="back-link">Paso 3</p>
+            <h4>Tus datos</h4>
+        </div>
+        <div class="d-flex flex-column flex-lg-row align-items-start gap-5 reserva_layout">
+            <div class="d-flex flex-column gap-5" style="width: 100%;">
+                <div>
+                    <div class="row mb-4 gx-3">
+                        <div class="col-12 col-md-6 fecha_input">
+                            <label>Nombres</label>
+                            <input type="text" id="input-nombres" placeholder="Camila">
+                        </div>
+                        <div class="col-12 col-md-6 fecha_input">
+                            <label>Apellido</label>
+                            <input type="text" id="input-apellido" placeholder="Rivera">
+                        </div>
+                    </div>
+                    <div class="row mb-4 gx-3">
+                        <div class="col-12 col-md-6 fecha_input">
+                            <label>Email</label>
+                            <input type="email" id="input-email" placeholder="camila@ejemplo.com">
+                        </div>
+                        <div class="col-12 col-md-6 fecha_input">
+                            <label>Teléfono - WhatsApp</label>
+                            <input type="tel" id="input-telefono" placeholder="+51 968...">
+                        </div>
+                    </div>
+                    <div class="row mb-4 gx-3">
+                        <div class="col-12 col-md-6 fecha_input">
+                            <label>Tipo de Documento</label>
+                            <select id="input-tipo-documento">
+                                <option value="DNI">DNI</option>
+                                <option value="Pasaporte">Pasaporte</option>
+                                <option value="Carné de Extranjería">Carné de Extranjería</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6 fecha_input">
+                            <label>Número de Documento</label>
+                            <input type="text" id="input-numero-documento" placeholder="12345678">
+                        </div>
+                    </div>
+                    <div class="row gx-3">
+                        <div class="col-12 col-md-6 fecha_input">
+                            <label>País de Residencia</label>
+                            <select id="input-pais">
+                                <option value="Perú">Perú</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Estados Unidos">Estados Unidos</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="col-12 col-md-6 fecha_input">
+                            <label>¿Cómo nos conociste?</label>
+                            <select id="input-conociste">
+                                <option value="Instagram">Instagram</option>
+                                <option value="Facebook">Facebook</option>
+                                <option value="TikTok">TikTok</option>
+                                <option value="Recomendación">Recomendación</option>
+                                <option value="Google">Google</option>
+                                <option value="Otro">Otro</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column gap-3 py-4 px-4 tipo_viaje_card">
+                    <div>
+                        <h4 class="mb-1">¿Hay algo que debamos saber?</h4>
+                        <p class="back-link text-body-small mb-0">Mensaje para el anfitrión (Opcional)</p>
+                    </div>
+                    <textarea id="input-mensaje" class="mensaje_anfitrion" rows="3"
+                        placeholder="Llegaremos tarde, ¿podríamos hacer check - in a las 22:00?"></textarea>
+                </div>
+
+                <div class="checkbox_terms d-flex align-items-center gap-2 py-3 px-4">
+                    <input type="checkbox" id="input-terminos">
+                    <label for="input-terminos" class="mb-0">Acepto las políticas de la casa y los términos de reserva.
+                        Recibiré confirmación por email y WhatsApp.</label>
+                </div>
+
+                <div class="d-flex flex-row justify-content-between acciones_paso">
+                    <button class="btn-secondary" id="btn-volver-huespedes" type="button">&lt;- Huéspedes</button>
+                    <button class="btn-primary" id="btn-continuar-pago" type="button">Continuar -&gt; Pago</button>
+                </div>
+            </div>
+            <div class="info_hospedaje_reserva">
+                <div>
+                    <h4>Casa Sirena</h4>
+                    <p>Las Pocitas - Hasta 12 huéspedes</p>
+                </div>
+                <img src="../../img/Casa/1.jfif" alt="Logo_MancoraStays"
+                    style="width: 100%; height: 300px; border-radius: 10px;">
+                <div>
+                    <ul class="resumen_reserva ps-0 mg-0" style="border: none;">
+                        <li><span>Fechas</span> <span id="text-fechas" class="resaltado">Sin fecha</span></li>
+                        <li><span>Huéspedes</span> <span id="text-huespedes" class="resaltado">1 ad</span></li>
+                        <li><span>Tipo</span> <span id="text-tipo" class="resaltado">Familiar</span></li>
+                    </ul>
+                    <div>
+                        <ul class="resumen_reserva ps-0">
+                            <li><span id="text-noches-precio">S/ 300 × 0 Noches</span> <span
+                                    id="text-subtotal">S/0</span></li>
+                            <li><span>Limpieza</span> <span>S/ 350</span></li>
+                            <li><span>Servicio</span> <span>S/ 100</span></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="resumen_reserva ps-0">
+                            <li><span>
+                                    <h4>Total</h4>
+                                </span> <span class="resaltado_resumen">
+                                    <h4 id="text-total">S/ 450</h4>
+                                </span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <footer class="mt-5">
+        <div
+            class="container-fluid d-flex flex-column flex-lg-row justify-content-between align-items-start px-4 px-lg-5 py-5 gap-4 gap-lg-3">
+            <div>
+                <div class="d-flex align-items-center gap-2">
+                    <img src="../../img/Logo - Blanco/genfavicon-64.png" alt="Logo_MancoraStays">
+                    <h4>Mancora Stays</h4>
+                </div>
+                <p>Casas de playa boutique, frente al mar, con servicio garantizado de inicio a fin.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-5">
+                <div class="d-flex flex-column gap-2">
+                    <h4>Explorar</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-house-door me-2"></i><a href="index.html">Home</a></li>
+                        <li><i class="bi bi-door-open me-2"></i><a href="pag/Hospedajes.html">Hospedajes</a></li>
+                        <li><i class="bi bi-binoculars me-2"></i><a href="pag/Experiencia.html">Experiencia</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Soporte</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-telephone me-2"></i><a href="pag/Contacto.html">Contacto</a></li>
+                        <li><i class="bi bi-question-circle me-2"></i><a href="pag/Faq.html">FAQ</a></li>
+                        <li><i class="bi bi-whatsapp me-2"></i><a href="https://wa.link/s6ilkf">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Síguenos</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-instagram me-2"></i><a href="#">Instagram</a></li>
+                        <li><i class="bi bi-facebook me-2"></i><a href="#">Facebook</a></li>
+                        <li><i class="bi bi-tiktok me-2"></i><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../js/menu.js"></script>
+    <script src="../../js/datos.js"></script>
+</body>
+
+</html>

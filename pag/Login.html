@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description"
+        content="Inicia sesión o crea tu cuenta en Mancora Stays para gestionar tus reservas y casas favoritas.">
+    <meta name="author" content="Juaus - Mancora Stays">
+    <title>Iniciar Sesión | Mancora Stays</title>
+
+    <link rel="icon" type="image/png" href="../img/Logo - Negro/genfavicon-32.png">
+    <link rel="apple-touch-icon" href="../img/Logo - Negro/apple-touch-icon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+    <header>
+        <nav class="container-fluid d-flex justify-content-between align-items-center px-5 py-2">
+            <a class="d-flex align-items-center gap-2" href="../index.html">
+                <img src="../img/Logo - Blanco/genfavicon-64.png" alt="Logo de Mancora Stays">
+                <span>
+                    <h4>Mancora Stays</h4>
+                </span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="menu d-flex gap-4 justify-content-between" id="menu">
+                <ul class="menuContainer d-flex gap-4 mb-0">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="Hospedajes.html">Hospedajes</a></li>
+                    <li><a href="Experiencias.html">Experiencia</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Contacto.html">Contacto</a></li>
+                </ul>
+                <a class="login d-flex align-items-center gap-2 a_active" href="Login.html" id="login">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16" aria-hidden="true">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                    </svg>
+                    Iniciar Sesión
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="login-main">
+        <div class="login-grid">
+
+           
+            <!-- Panel izquierdo: imagen -->
+
+<div class="login-image-panel">
+    <img src="../img/Mancora-Casas/casa-login.jpeg" alt="Hermosa vista de la casa de playa" class="login-bg-img">
+    <div class="login-image-content">
+        <h2>Guarda tus casas favoritas</h2>
+        <p>Ve tus reservas, repite estadías, encuentra rápido tu próxima escapada.</p>
+    </div>
+</div> 
+
+            <!-- Panel derecho: formulario -->
+            <div class="login-form-panel">
+
+                <div class="login-tabs" role="tablist" aria-label="Acceso a tu cuenta">
+                    <button class="login-tab" id="tab-btn-login" role="tab" type="button" aria-selected="true"
+                        aria-controls="panel-login" data-tab="panel-login">
+                        Iniciar Sesión
+                    </button>
+                    <button class="login-tab" id="tab-btn-register" role="tab" type="button" aria-selected="false"
+                        aria-controls="panel-register" data-tab="panel-register">
+                        Crear Cuenta
+                    </button>
+                </div>
+
+                <!-- Panel: Iniciar Sesión -->
+                <div class="login-tab-panel active" id="panel-login" role="tabpanel" aria-labelledby="tab-btn-login">
+                    <h1>Bienvenido de vuelta</h1>
+                    <p>Entra a tu cuenta para ver tus reservas y favoritos</p>
+
+                    <form id="form-login" novalidate>
+                        <div class="form-group">
+                            <label for="login-email">Email</label>
+                            <input type="email" id="login-email" name="email" placeholder="jesus@ejemplo.com"
+                                autocomplete="email">
+                            <span class="error-message" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="login-password">Contraseña</label>
+                            <input type="password" id="login-password" name="password" autocomplete="current-password">
+                            <span class="error-message" role="alert"></span>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label" for="login-remember">
+                                <input type="checkbox" id="login-remember" name="remember" checked>
+                                Recordarme en este dispositivo
+                            </label>
+                            <a class="forgot-link" href="#">Olvidé mi contraseña</a>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            Entrar <i class="bi bi-arrow-right"></i>
+                        </button>
+
+                        <p class="form-success" id="login-success" aria-live="polite">
+                            <i class="bi bi-check-circle-fill"></i> ¡Bienvenido de nuevo! Sesión iniciada correctamente.
+                        </p>
+                    </form>
+                </div>
+
+                <!-- Panel: Crear Cuenta -->
+                <div class="login-tab-panel" id="panel-register" role="tabpanel" aria-labelledby="tab-btn-register">
+                    <h1>Crea tu cuenta</h1>
+                    <p>Regístrate para guardar tus casas favoritas y agilizar tus reservas</p>
+
+                    <form id="form-register" novalidate>
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="reg-nombre">Nombres</label>
+                                <input type="text" id="reg-nombre" name="nombre" placeholder="Jesús"
+                                    autocomplete="given-name">
+                                <span class="error-message" role="alert"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-apellido">Apellido</label>
+                                <input type="text" id="reg-apellido" name="apellido" placeholder="Morales"
+                                    autocomplete="family-name">
+                                <span class="error-message" role="alert"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reg-email">Email</label>
+                            <input type="email" id="reg-email" name="email" placeholder="jesus@ejemplo.com"
+                                autocomplete="email">
+                            <span class="error-message" role="alert"></span>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reg-telefono">Teléfono · WhatsApp</label>
+                            <div class="d-flex align-items-center gap-2 border rounded p-2 bg-white">
+                                <span class="text-neutral-500 fs-body-sm">+51</span>
+                                <input type="tel" id="reg-telefono" name="telefono" placeholder="999 888 777"
+                                    class="border-0 p-0 flex-grow-1" style="outline: none;">
+                            </div>
+                            <span class="error-message" role="alert"></span>
+                        </div>
+
+                        <div class="form-row-2">
+                            <div class="form-group">
+                                <label for="reg-password">Contraseña</label>
+                                <input type="password" id="reg-password" name="password" autocomplete="new-password">
+                                <span class="error-message" role="alert"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="reg-password-confirm">Confirmar contraseña</label>
+                                <input type="password" id="reg-password-confirm" name="password_confirm"
+                                    autocomplete="new-password">
+                                <span class="error-message" role="alert"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-check">
+                            <label class="form-check-label" for="reg-terms">
+                                <input type="checkbox" id="reg-terms" name="terms">
+                                Acepto los términos y la política de privacidad
+                            </label>
+                        </div>
+                        <span class="error-message" id="reg-terms-error" role="alert"></span>
+
+                        <button type="submit" class="btn-submit mt-3">
+                            Crear cuenta <i class="bi bi-arrow-right"></i>
+                        </button>
+
+                        <p class="form-success" id="register-success" aria-live="polite">
+                            <i class="bi bi-check-circle-fill"></i> ¡Cuenta creada con éxito! Ya puedes iniciar sesión.
+                        </p>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-5">
+        <div
+            class="container-fluid d-flex flex-column flex-lg-row justify-content-between align-items-start px-4 px-lg-5 py-5 gap-4 gap-lg-3">
+            <div>
+                <div class="d-flex align-items-center gap-2">
+                    <img src="../../img/Logo - Blanco/genfavicon-64.png" alt="Logo_MancoraStays">
+                    <h4>Mancora Stays</h4>
+                </div>
+                <p>Casas de playa boutique, frente al mar, con servicio garantizado de inicio a fin.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-5">
+                <div class="d-flex flex-column gap-2">
+                    <h4>Explorar</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-house-door me-2"></i><a href="index.html">Home</a></li>
+                        <li><i class="bi bi-door-open me-2"></i><a href="pag/Hospedajes.html">Hospedajes</a></li>
+                        <li><i class="bi bi-binoculars me-2"></i><a href="pag/Experiencia.html">Experiencia</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Soporte</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-telephone me-2"></i><a href="pag/Contacto.html">Contacto</a></li>
+                        <li><i class="bi bi-question-circle me-2"></i><a href="pag/Faq.html">FAQ</a></li>
+                        <li><i class="bi bi-whatsapp me-2"></i><a href="https://wa.link/s6ilkf">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Síguenos</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-instagram me-2"></i><a href="#">Instagram</a></li>
+                        <li><i class="bi bi-facebook me-2"></i><a href="#">Facebook</a></li>
+                        <li><i class="bi bi-tiktok me-2"></i><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

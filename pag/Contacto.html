@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contacto</title>
+    <link rel="icon" type="image/png" href="../img/Logo - Negro/genfavicon-32.png">
+    <link rel="apple-touch-icon" href="../img/Logo - Negro/apple-touch-icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/normalize.css">
+    <link rel="stylesheet" href="../../css/reserva.css">
+    <link rel="stylesheet" href="../../css/contacto.css">
+    <link rel="stylesheet" href="../../css/datos.css">
+</head>
+
+<body>
+    <header class="mb-5">
+        <nav class="container-fluid d-flex justify-content-between align-items-center px-5 py-2">
+            <a class="d-flex align-items-center gap-2" href="#">
+                <img src="../../img/Logo - Blanco/genfavicon-64.png" alt="Logo_MancoraStays">
+                <span>
+                    <h4>Mancora Stays</h4>
+                </span>
+            </a>
+            <button class="menu-toggle" id="menuToggle">
+                <i class="bi bi-list"></i>
+            </button>
+            <div class="menu d-flex gap-4 justify-content-between" id="menu">
+                <ul class="menuContainer d-flex gap-4 mb-0">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="Hospedajes.html">Hospedajes</a></li>
+                    <li><a href="Experiencia.html">Experiencia</a></li>
+                    <li><a href="Nosotros.html">Nosotros</a></li>
+                    <li><a href="Contacto.html" class="a_active">Contacto</a></li>
+                </ul>
+                <a class="login d-flex align-items-center gap-2" href="#" id="login" text-align="center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-person" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                    </svg>
+                    Iniciar Sesión
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <!-- Hero -->
+        <div class="contacto_hero d-flex flex-column flex-lg-row align-items-center gap-5 mb-5">
+            <div class="contacto_hero_texto" style="width: 100%;">
+                <p class="back-link mb-1">¡Hola!</p>
+                <h2 class="mb-3">¿En que te podemos <strong>ayudar</strong>?</h2>
+                <p class="contacto_hero_desc mb-0">
+                    ¡Nuestro equipo en Máncora responde de lunes a domingo, de 7am a 11pm.
+                    Lo más rápido, siempre, es WhatsApp!
+                </p>
+            </div>
+            <img src="../../img/Contacto/images.jfif" alt="Equipo de atención Mancora Stays" class="contacto_hero_img">
+        </div>
+
+        <!-- Tarjetas de contacto rápido -->
+        <div class="contacto_cards_grid mb-5">
+            <div class="contacto_card">
+                <p class="contacto_card_label mb-1">Lo más rapido</p>
+                <h4 class="mb-1">WhatsApp</h4>
+                <p class="contacto_card_desc">Respuesta en menos de 5 minutos durante horario de atención.</p>
+                <a href="https://wa.me/51973208679" target="_blank" class="btn-primary contacto_card_btn">
+                    +51 973 208 679 <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+            </div>
+            <div class="contacto_card">
+                <p class="contacto_card_label mb-1">Para dudas largas</p>
+                <h4 class="mb-1">Email</h4>
+                <p class="contacto_card_desc">Te respondemos en menos de 24 horas, en español o inglés.</p>
+                <a href="mailto:hola@mancorastays.com" class="btn-secondary contacto_card_btn">
+                    hola@mancorastays.com <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+            </div>
+            <div class="contacto_card">
+                <p class="contacto_card_label mb-1">Trato rápido</p>
+                <h4 class="mb-1">Teléfono</h4>
+                <p class="contacto_card_desc">Lun-Dom · 7am – 11pm hora Perú (UTC-5).</p>
+                <a href="tel:+51923444222" class="btn-secondary contacto_card_btn">
+                    +51 923 444 222 <i class="bi bi-arrow-right ms-1"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Formulario -->
+        <div class="d-flex justify-content-center mb-5">
+            <div class="contacto_form_card">
+                <h4 class="mb-4">O... Escríbenos tu duda</h4>
+
+                <div class="row mb-4 gx-3">
+                    <div class="col-12 col-md-6 fecha_input">
+                        <label>Nombres</label>
+                        <input type="text" id="input-nombres" placeholder="Camila">
+                    </div>
+                    <div class="col-12 col-md-6 fecha_input">
+                        <label>Email</label>
+                        <input type="email" id="input-email" placeholder="camila@ejemplo.com">
+                    </div>
+                </div>
+
+                <div class="row mb-4 gx-3">
+                    <div class="col-12 col-md-6 fecha_input">
+                        <label>Teléfono - WhatsApp</label>
+                        <input type="tel" id="input-telefono" placeholder="+51 968...">
+                    </div>
+                    <div class="col-12 col-md-6 fecha_input">
+                        <label>Tema</label>
+                        <select id="input-tema">
+                            <option value="Nueva Reserva">Nueva Reserva</option>
+                            <option value="Reserva Existente">Reserva Existente</option>
+                            <option value="Pagos y Facturación">Pagos y Facturación</option>
+                            <option value="Otro">Otro</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="fecha_input mb-4">
+                    <textarea id="input-duda" class="mensaje_anfitrion" rows="4" placeholder="Cuéntanos tu duda"></textarea>
+                </div>
+
+                <div class="checkbox_terms d-flex align-items-center gap-2 py-3 px-3 mb-4">
+                    <input type="checkbox" id="input-acepto-contacto">
+                    <label for="input-acepto-contacto" class="mb-0">Acepto recibir respuesta por email y WhatsApp.</label>
+                </div>
+
+                <button class="btn-primary w-100" id="btn-enviar-mensaje" type="button">Enviar mensaje -&gt;</button>
+                <p class="back-link text-center mt-2 mb-0">Te respondemos en menos de 24 horas.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="mt-5">
+        <div class="container-fluid d-flex flex-column flex-lg-row justify-content-between align-items-start px-4 px-lg-5 py-5 gap-4 gap-lg-3">
+            <div class="footer_brand">
+                <div class="d-flex align-items-center gap-2">
+                    <img src="../../img/Logo - Blanco/genfavicon-64.png" alt="Logo_MancoraStays">
+                    <h4>Mancora Stays</h4>
+                </div>
+                <p>Casas de playa boutique, frente al mar, con servicio garantizado de inicio a fin.</p>
+            </div>
+            <div class="d-flex flex-wrap gap-5 footer_links">
+                <div class="d-flex flex-column gap-2">
+                    <h4>Explorar</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-house-door me-2"></i><a href="#">Home</a></li>
+                        <li><i class="bi bi-door-open me-2"></i><a href="#">Hospedajes</a></li>
+                        <li><i class="bi bi-binoculars me-2"></i><a href="#">Experiencia</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Soporte</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-telephone me-2"></i><a href="#">Contacto</a></li>
+                        <li><i class="bi bi-question-circle me-2"></i><a href="#">FAQ</a></li>
+                        <li><i class="bi bi-whatsapp me-2"></i><a href="#">WhatsApp</a></li>
+                    </ul>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                    <h4>Síguenos</h4>
+                    <ul class="d-flex flex-column gap-3 mb-0 ps-0">
+                        <li><i class="bi bi-instagram me-2"></i><a href="#">Instagram</a></li>
+                        <li><i class="bi bi-facebook me-2"></i><a href="#">Facebook</a></li>
+                        <li><i class="bi bi-tiktok me-2"></i><a href="#">TikTok</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/contacto.js"></script>
+</body>
+
+</html>
