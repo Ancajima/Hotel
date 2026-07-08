@@ -1,0 +1,103 @@
+.confirmacion_wrapper {
+    max-width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.confirmacion_detalle {
+    font-size: var(--fs-body-md);
+    font-weight: var(--font-regular);
+    color: var(--text-default);
+}
+
+.confirmacion_botones {
+    width: 100%;
+    justify-content: center;
+}
+
+.confirmacion_botones button {
+    white-space: nowrap;
+}
+
+.confirmacion_pasos_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-md);
+}
+
+.confirmacion_paso_card {
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--radius-sm);
+    padding: var(--space-md);
+    background-color: var(--color-white);
+}
+
+.confirmacion_paso_momento {
+    font-size: var(--fs-body-sm);
+    font-weight: var(--font-regular);
+    color: var(--text-description);
+}
+
+.confirmacion_paso_titulo {
+    font-size: var(--fs-body-md);
+    font-weight: var(--font-medium);
+    color: var(--color-primary-500);
+}
+
+.confirmacion_paso_desc {
+    font-size: var(--fs-body-sm);
+    font-weight: var(--font-regular);
+    color: var(--text-description);
+}
+
+.confirmacion_dudas_card {
+    border: 1px solid var(--color-primary-500);
+    border-radius: 10px;
+    background-color: var(--color-secondary-100);
+    padding: var(--space-lg) var(--space-lg);
+    width: 100%;
+    max-width: 340px;
+}
+
+.confirmacion_dudas_card .confirmacion_paso_titulo {
+    color: var(--text-default);
+}
+
+/* ---- Responsive: tablet ---- */
+@media (max-width: 991.98px) {
+    .confirmacion_pasos_grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ---- Responsive: móvil ---- */
+@media (max-width: 575.98px) {
+    .confirmacion_wrapper h2 {
+        font-size: 1.5rem;
+    }
+
+    .confirmacion_wrapper h3 {
+        font-size: 1.2rem;
+    }
+
+    .confirmacion_detalle {
+        font-size: var(--fs-body-sm);
+    }
+
+    .confirmacion_botones {
+        flex-direction: column;
+    }
+
+    .confirmacion_botones button {
+        width: 100%;
+    }
+
+    .confirmacion_pasos_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .confirmacion_dudas_card {
+        max-width: 100%;
+    }
+}

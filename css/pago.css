@@ -1,0 +1,83 @@
+.metodo_pago_card {
+    display: flex;
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--radius-sm);
+    padding: var(--space-md);
+    cursor: pointer;
+    background-color: var(--color-white);
+    transition: border-color 0.15s ease, background-color 0.15s ease;
+}
+
+.metodo_pago_card:hover {
+    border-color: var(--color-primary-500);
+}
+
+.metodo_pago_active {
+    border-color: var(--color-primary-500);
+    background-color: var(--color-secondary-100);
+}
+
+.metodo_pago_card input[type="radio"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-primary-500);
+    flex-shrink: 0;
+}
+
+.metodo_pago_title {
+    font-size: var(--fs-body-md);
+    font-weight: var(--font-medium);
+    color: var(--text-default);
+}
+
+.metodo_pago_desc {
+    font-size: var(--fs-body-sm);
+    font-weight: var(--font-regular);
+    color: var(--text-description);
+}
+
+.metodo_pago_icons {
+    font-size: 1.4rem;
+    color: var(--text-description);
+}
+
+.metodo_pago_tag {
+    font-size: var(--fs-body-sm);
+    font-weight: var(--font-regular);
+    color: var(--text-description);
+    white-space: nowrap;
+}
+
+.cobro_box {
+    background-color: var(--color-secondary-100);
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--radius-sm);
+    padding: var(--space-md);
+    height: 100%;
+}
+
+.cobro_label {
+    font-size: var(--fs-body-sm);
+    font-weight: var(--font-regular);
+    color: var(--text-description);
+}
+
+.cobro_monto {
+    color: var(--text-default);
+}
+
+.cobro_nota {
+    font-size: var(--fs-body-sm);
+    font-weight: var(--font-regular);
+    color: var(--text-description);
+}
+
+.pagas_hoy_row {
+    border-top: 1px dashed var(--color-neutral-300);
+}
+
+.pagas_hoy_label,
+.pagas_hoy_valor {
+    color: var(--color-primary-500) !important;
+    font-weight: var(--font-bold);
+}

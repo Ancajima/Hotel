@@ -1,0 +1,56 @@
+.fecha_input select {
+    font-size: var(--fs-body-md);
+    font-weight: var(--font-regular);
+    color: var(--text-default);
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm) var(--space-sm);
+    background-color: var(--color-white);
+}
+
+.fecha_input input::placeholder,
+.fecha_input select::placeholder,
+.mensaje_anfitrion::placeholder {
+    color: var(--color-neutral-300);
+}
+
+.fecha_input.campo_error input,
+.fecha_input.campo_error select {
+    border-color: #d9534f;
+}
+
+.mensaje_anfitrion {
+    font-size: var(--fs-body-md);
+    font-weight: var(--font-regular);
+    color: var(--text-default);
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm);
+    background-color: var(--color-white);
+    resize: none;
+    width: 100%;
+}
+
+.checkbox_terms {
+    background-color: var(--color-white);
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--radius-sm);
+}
+
+.checkbox_terms input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--color-primary-500);
+    flex-shrink: 0;
+}
+
+.checkbox_terms label {
+    font-size: var(--fs-body-sm);
+    font-weight: var(--font-regular);
+    color: var(--text-description);
+    cursor: pointer;
+}
+
+.checkbox_terms.campo_error {
+    border-color: #d9534f;
+}

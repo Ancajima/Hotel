@@ -1,0 +1,244 @@
+/* --- Estilos de la página Home --- */
+
+.hero{
+    position: relative;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    color: var(--color-white);
+    background-image:
+        linear-gradient(180deg, rgba(29,58,51,.55), rgba(29,58,51,.8)),
+        url("https://picsum.photos/seed/mancora-hero/1600/900");
+    background-size: cover;
+    background-position: center;
+    padding: var(--space-xl) var(--space-sm) var(--space-lg);
+    text-align: left;
+    overflow: visible;
+}
+
+.hero .container{
+    position: relative;
+    z-index: 100;
+}
+
+.hero-content{
+    max-width: 680px;
+}
+
+.hero-content h1{
+    color: var(--color-white);
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    line-height: 1.05;
+    margin-bottom: 1rem;
+}
+
+.hero-content p{
+    color: var(--color-secondary-100);
+    margin-top: var(--space-sm);
+    max-width: 620px;
+}
+
+.hero-search{
+    background: var(--color-white);
+    border-radius: 1.5rem;
+    box-shadow: 0 18px 30px rgba(0, 0, 0, 0.1);
+    padding: 1rem 1rem 1.1rem;
+    margin: 0;
+    max-width: 960px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 168%;
+    transform: translate(-50%, -50%);
+    z-index: 30;
+}
+
+.about-section{
+    margin: 4rem auto;
+    max-width: 960px;
+    padding: 0 1rem;
+}
+
+.hero-search label{
+    font-size: .78rem;
+    color: rgba(22, 28, 33, 0.75);
+    font-weight: 600;
+    margin-bottom: .3rem;
+    display: block;
+    text-align: left;
+}
+
+.hero-search .form-control,
+.hero-search .form-select{
+    width: 100%;
+    border-radius: 1rem;
+    border: 1px solid rgba(31, 31, 31, 0.14);
+    padding: .85rem 1rem;
+    box-shadow: none;
+    background: #ffffff;
+    min-height: 3.2rem;
+    font-size: .95rem;
+}
+
+.hero-search .form-control::placeholder,
+.hero-search .form-select option{
+    color: rgba(80, 91, 101, 0.6);
+}
+
+.hero-search .btn-primary{
+    width: 100%;
+    background-color: #2f6f58;
+    border-radius: 1rem;
+    padding: 0 1.1rem;
+    color: #ffffff;
+    font-weight: 700;
+    min-height: 3.8rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: .01em;
+}
+
+.hero-search .btn-primary i{
+    margin-right: .5rem;
+}
+
+.hero-search .d-grid{
+    display: flex !important;
+    align-items: flex-end;
+}
+
+.hero-search .form-control:focus,
+.hero-search .form-select:focus{
+    box-shadow: 0 0 0 0.12rem rgba(47, 111, 88, 0.16);
+    border-color: rgba(47, 111, 88, 0.3);
+}
+
+.hero-search .btn-primary.h-100{
+    height: auto;
+}
+
+.hero-search .form-control:focus,
+.hero-search .form-select:focus{
+    box-shadow: 0 0 0 0.2rem rgba(63, 116, 100, 0.14);
+    border-color: var(--color-primary-500);
+}
+
+@media (min-width: 1200px) {
+    .hero-search .form-control,
+    .hero-search .form-select{
+        min-height: 3.3rem;
+    }
+}
+
+.hero-search .form-control:focus,
+.hero-search .form-select:focus{
+    box-shadow: 0 0 0 0.12rem rgba(47, 111, 88, 0.16);
+    border-color: rgba(47, 111, 88, 0.3);
+}
+
+.houses-section .zona-pills{
+    justify-content: flex-end;
+}
+
+.houses-section .pill{
+    border: 1px solid var(--color-neutral-300);
+    background-color: var(--color-white);
+    color: var(--text-default);
+    padding: .6rem 1.2rem;
+    border-radius: 999px;
+    box-shadow: 0 8px 20px rgba(31, 31, 31, 0.05);
+}
+
+.houses-section .pill.active{
+    background-color: var(--color-primary-700);
+    color: var(--color-white);
+    border-color: transparent;
+}
+
+.house-card{
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(31, 31, 31, 0.08);
+}
+
+.house-card-img{
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    overflow: hidden;
+    aspect-ratio: 1.5 / 1;
+}
+
+.house-card-body{
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: .65rem;
+    background: var(--color-white);
+}
+
+.house-card-body h3{
+    font-size: 1.4rem;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.house-card-body p{
+    margin: 0;
+    color: var(--text-description);
+}
+
+.house-card-price{
+    margin-top: auto;
+    font-weight: var(--font-black);
+    font-size: 1rem;
+    color: var(--color-neutral-900);
+}
+
+@media (max-width: 992px){
+    .hero{
+        min-height: auto;
+        padding-bottom: var(--space-lg);
+    }
+    .hero-search{
+        position: static;
+        transform: none;
+        top: auto;
+        margin-top: var(--space-lg);
+        box-shadow: var(--shadow-sm);
+    }
+}
+
+@media (max-width: 768px){
+    .hero-search{
+        bottom: -8px;
+        padding: var(--space-sm);
+    }
+    .hero-search .col-md-2,
+    .hero-search .col-md-4,
+    .hero-search .col-lg-2,
+    .hero-search .col-lg-4{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .hero-search .d-grid{
+        margin-top: .5rem;
+    }
+    .hero-search .form-control,
+    .hero-search .form-select{
+        min-height: 3.2rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .hero-search{
+        max-width: 840px;
+    }
+}
+
+.hero-search .btn-primary{
+    width: 100%;
+    height: calc(1.5em + .75rem + 2px);
+}
+
+

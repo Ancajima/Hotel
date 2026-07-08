@@ -1,0 +1,181 @@
+.a_reserva {
+    color: var(--color-primary-500);
+    background-color: var(--color-white);
+    text-decoration: none;
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--color-primary-500);
+}
+
+.a_reserva_active {
+    background-color: var(--color-primary-500);
+    color: var(--color-secondary-100);
+}
+
+.a_reserva_completed{
+    background-color: var(--color-neutral-200);
+    color: var(--color-neutral-500);
+    border-color: var(--color-neutral-200);
+}
+
+.back-link {
+    color: var(--text-description);
+    text-decoration: none;
+    font-size: var(--fs-body-sm);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+}
+
+.back-link i {
+    color: var(--text-description);
+}
+
+.fecha_input {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xs);
+}
+
+.fecha_input label {
+    font-size: var(--fs-body-sm);
+    font-weight: var(--font-medium);
+    color: var(--text-description);
+}
+
+.fecha_input input {
+    font-size: var(--fs-body-md);
+    font-weight: var(--font-regular);
+    color: var(--text-default);
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm) var(--space-sm);
+    background-color: var(--color-white);
+}
+
+.info_hospedaje_reserva {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    border: 1px solid var(--color-neutral-300);
+    width: 100%;
+    border-radius: var(--radius-sm);
+    padding: var(--space-md);
+    background-color: var(--color-white);
+}
+
+.info_hospedaje_reserva h4 {
+    color: var(--text-default);
+}
+
+.info_hospedaje_reserva p,
+span {
+    font-size: var(--fs-body-sm);
+    font-weight: var(--font-regular);
+    color: var(--text-description);
+}
+
+.resumen_reserva {
+    border-top: 1px solid var(--color-neutral-300);
+}
+
+.resumen_reserva li {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--fs-body-md);
+    font-weight: var(--font-regular);
+    color: var(--text-default);
+    margin-top: var(--space-sm);
+}
+
+.resaltado {
+    color: var(--text-primary);
+    font-weight: var(--font-bold);
+}
+
+.huespedes_list {
+    display: flex;
+    flex-direction: column;
+}
+
+.counter_row {
+    padding: var(--space-md) 0;
+    border-bottom: 1px dashed var(--color-neutral-300);
+}
+
+.counter_row:last-child {
+    border-bottom: none;
+}
+
+.counter_title {
+    font-size: var(--fs-body-md);
+    font-weight: var(--font-medium);
+    color: var(--text-default);
+}
+
+.counter_desc {
+    font-size: var(--fs-body-sm);
+    font-weight: var(--font-regular);
+    color: var(--text-description);
+}
+
+.counter_control {
+    min-width: 90px;
+    justify-content: space-between;
+}
+
+.counter_btn {
+    background: none;
+    border: none;
+    padding: 0;
+    line-height: 0;
+    color: var(--color-primary-500);
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+.counter_btn:active {
+    transform: scale(0.92);
+}
+
+.counter_btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+.counter_value {
+    font-size: var(--fs-body-md);
+    font-weight: var(--font-bold);
+    color: var(--text-default);
+    min-width: 18px;
+    text-align: center;
+}
+
+.tipo_viaje_card {
+    background-color: var(--color-white);
+    border-radius: 10px;
+    border: 1px solid var(--color-neutral-300);
+}
+
+.btn_tipo_viaje {
+    background-color: var(--color-white);
+    color: var(--text-default);
+    border: 1px solid var(--color-neutral-300);
+    border-radius: var(--radius-sm);
+    padding: var(--space-sm) var(--space-md);
+    font-size: var(--fs-body-sm);
+    font-weight: var(--font-medium);
+    cursor: pointer;
+    transition: background-color 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn_tipo_viaje:hover {
+    border-color: var(--color-primary-500);
+}
+
+.btn_tipo_viaje_active {
+    background-color: var(--color-primary-500);
+    color: var(--color-secondary-100);
+    border-color: var(--color-primary-500);
+}
